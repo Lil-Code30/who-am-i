@@ -37,7 +37,7 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
         <Button size="lg" className="w-full sm:w-auto" asChild>
           <a href="mailto:lokoismael30@gmail.com">
             <Mail className="mr-2 h-4 w-4" />
