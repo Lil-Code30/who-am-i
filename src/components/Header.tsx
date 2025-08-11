@@ -4,7 +4,7 @@ import { Mail } from "lucide-react";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="flex relative min-h-[200px] md:min-h-[180px]">
         <div className="z-10 flex-1 pr-4 md:pr-48">
           <p className="text-3xl md:text-5xl font-bold">
