@@ -1,14 +1,35 @@
-# Vite + React + TypeScript + TailwindCSS + shadcn/ui Starter Pack
+# My Portfolio v3
 
-This is a starter pack for building modern web applications with Vite, React, TypeScript, TailwindCSS, and shadcn/ui.
+This is the third version of my personal portfolio, built with modern web technologies. It showcases my skills, projects, and experience as a web developer.
+
+## 🚀 About This Project
+
+This portfolio is a single-page application built with React, TypeScript, and TailwindCSS. It features a clean and modern design, with a focus on user experience and performance. The data is currently hardcoded and will be replaced with a proper backend in the future.
+
+## ✨ Features
+
+- **Responsive Design:** The portfolio is fully responsive and works on all devices.
+- **Modern UI:** The UI is built with shadcn/ui components, providing a clean and modern look.
+- **Animations:** The portfolio features subtle animations to enhance the user experience.
+- **Component-Based Architecture:** The codebase is organized into reusable components, making it easy to maintain and scale.
+
+## 🛠️ Technologies Used
+
+- **Vite:** For fast development and builds
+- **React:** For building the user interface
+- **TypeScript:** For static typing
+- **TailwindCSS:** For utility-first styling
+- **shadcn/ui:** For accessible and customizable components
+- **ESLint:** For code linting
+- **Prettier:** For code formatting
 
 ## 🚀 Getting Started
 
 To get started, clone this repository and install the dependencies:
 
 ```bash
-git clone https://github.com/Lil-Code30/Vite-React-TypeScript-TailwindCSS-shadcn-ui-_Starter-Pack.git
-cd Vite-React-TypeScript-TailwindCSS-shadcn-ui-_Starter-Pack
+git clone https://github.com/your-username/who-am-i.git
+cd who-am-i
 npm install
 ```
 
@@ -19,46 +40,6 @@ npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to see the result.
-
-## ✨ Features
-
-- ⚡️ [Vite](https://vitejs.dev/) for fast development and builds
-- ⚛️ [React](https://reactjs.org/) for building user interfaces
-- 🔵 [TypeScript](https://www.typescriptlang.org/) for static typing
-- 💨 [TailwindCSS](https://tailwindcss.com/) for utility-first styling
-- 🎨 [shadcn/ui](https://ui.shadcn.com/) for accessible and customizable components
-- 📖 [ESLint](https://eslint.org/) for code linting
-- 💅 [Prettier](https://prettier.io/) for code formatting
-
-## 📁 Folder Structure
-
-The folder structure is as follows:
-
-```
-.
-├── public
-│   └── vite.svg
-├── src
-│   ├── assets
-│   │   └── react.svg
-│   ├── components
-│   │   └── ui
-│   │       └── button.tsx
-│   ├── lib
-│   │   └── utils.ts
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── .gitignore
-├── components.json
-├── eslint.config.js
-├── index.html
-├── package.json
-├── README.md
-├── tsconfig.json
-└── vite.config.ts
-```
 
 ## 📦 Building for Production
 
