@@ -5,8 +5,8 @@ import {
   Database,
   Palette,
   Server,
-  Smartphone,
-  Cloud,
+  //   Smartphone,
+  //   Cloud,
 } from "lucide-react";
 
 const Skills = () => {
