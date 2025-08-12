@@ -75,10 +75,10 @@ const Projects = () => {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-secondary/5">
+    <section id="projects" className="py-8 bg-secondary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ const Projects = () => {
         </div>
 
         {/* Featured Projects */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           {featuredProjects.map((project) => (
             <Card
               key={project.title}

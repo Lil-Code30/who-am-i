@@ -1,105 +1,91 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Building } from "lucide-react";
+import { Calendar, MapPin, Building, Link } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      type: "Full-time",
+      title: "Full Stack Developer",
+      company: "DripCode Studio",
+      location: "Quebec, Canada (Remote)",
+      period: "Jun 2025 - Present",
+      type: "Freelance",
       description:
-        "Lead development of scalable web applications serving 100k+ users. Mentor junior developers and drive technical decisions for the frontend team.",
+        "Work closely with startups, creators, and entrepreneurs to bring digital projects to life — from initial design to final deployment, ensuring high performance and user-focused experiences.",
       achievements: [
-        "Reduced application load time by 40% through optimization",
-        "Led migration to React 18 and Next.js 13",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Mentored 3 junior developers and conducted technical interviews",
+        "Designed and developed responsive web applications using React.js and Tailwind CSS",
+        "Built and optimized RESTful APIs with Node.js and Express",
+        "Implemented PostgreSQL and MongoDB databases for scalable data management",
+        "Improved web app performance and SEO for better search ranking and faster load times",
+        "Delivered custom UI/UX designs tailored to client branding and needs",
       ],
       technologies: [
-        "React",
+        "React.js",
         "Next.js",
         "TypeScript",
+        "Tailwind CSS",
         "Node.js",
-        "AWS",
+        "Express",
         "PostgreSQL",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupXYZ",
-      location: "Remote",
-      period: "2020 - 2022",
-      type: "Full-time",
-      description:
-        "Built responsive web applications and collaborated with design team to create intuitive user interfaces for B2B SaaS platform.",
-      achievements: [
-        "Developed customer dashboard used by 50+ enterprise clients",
-        "Improved mobile responsiveness across all platforms",
-        "Implemented real-time data visualization features",
-        "Collaborated with UX team to increase user engagement by 35%",
-      ],
-      technologies: [
-        "React",
-        "Redux",
-        "CSS3",
-        "JavaScript",
-        "Chart.js",
-        "REST APIs",
-      ],
-    },
-    {
-      title: "Junior Web Developer",
-      company: "Digital Agency Pro",
-      location: "San Francisco, CA",
-      period: "2019 - 2020",
-      type: "Full-time",
-      description:
-        "Developed custom websites and web applications for various clients across different industries.",
-      achievements: [
-        "Successfully delivered 20+ client projects on time",
-        "Maintained 98% client satisfaction rating",
-        "Contributed to agency's first React-based project",
-        "Learned and implemented modern development practices",
-      ],
-      technologies: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "PHP",
-        "WordPress",
-        "MySQL",
+        "MongoDB",
+        "Prisma",
+        "Figma",
+        "SEO Optimization",
+        "Git",
+        "Vercel",
       ],
     },
   ];
 
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      period: "2015 - 2019",
-      location: "Berkeley, CA",
+      degree: "Bachelor of Applied Science (BASc), Computer Engineering",
+      school: "UQAR, Campus Levis",
+      link: "https://www.uqar.ca/",
+      period: "2025 – present",
+      location: "Levis, Quebec, Canada",
       description:
-        "Graduated with honors. Focused on web technologies, algorithms, and software engineering principles.",
+        "Comprehensive program covering embedded systems, software engineering, computer architecture, and cybersecurity. Completed hands-on projects involving full-stack development, network security, and system optimization. Developed strong problem-solving and analytical skills through team collaborations and real-world case studies.",
+    },
+    {
+      degree: "Diploma of Vocational Studies (DVS), IT Support",
+      school: "CFP Marie-Rollet",
+      link: "https://cfpmr.com/",
+      period: "2023 – 2024",
+      location: "Quebec, Canada",
+      description:
+        "Training focused on technical support for software and hardware systems, including workstation assembly, server management, network troubleshooting, and customer service skills. Developed proficiency in Linux, Active Directory, Microsoft Windows, Office 365, and service desk operations.",
+    },
+    {
+      degree: "High School Diploma",
+      school: "G.B.H.S Etoug-Ebe",
+      link: "https://vymaps.com/CM/Lycee-bilingue-d-toug-b-Yaound-560887280602481/",
+      period: "2013 – 2020",
+      location: "Yaoundé, Cameroon",
+      description:
+        "Completed a broad-based secondary education with strong foundations in mathematics, sciences, and computer studies, preparing for advanced technical education.",
     },
   ];
+
   const certifications = [
     {
-      title: "Certified Full Stack Developer",
-      link: "https://www.freecodecamp.org/certification/your-username/full-stack",
+      title: "Responsive Web Design Certification",
+      link: "https://freecodecamp.org/certification/licode/responsive-web-design",
     },
     {
-      title: "AWS Certified Solutions Architect",
-      link: "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      title: "Learn React from Scrimba",
+      link: "https://scrimba.com/certificate-cert24zAwPPowNSNPmz3Jk34mAKArgfzv7JPZdcue",
+    },
+    {
+      title: "Postman API Fundamentals Student Expert",
+      link: "https://badgr.com/public/assertions/nKH2qzroS0ebWMrsssrRRw?identity__email=lokoismael30%40gmail.com",
     },
   ];
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             Experience & Education
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -110,7 +96,7 @@ const Experience = () => {
         <div className="grid grid-cols-1 gap-8">
           {/* Experience Timeline */}
           <div className="">
-            <h3 className="text-2xl font-semibold text-foreground mb-8 flex items-center gap-2">
+            <h3 className="text-2xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <Building className="h-5 w-5 text-primary" />
               Work Experience
             </h3>
@@ -120,7 +106,7 @@ const Experience = () => {
                   key={index}
                   className="hover:shadow-lg transition-all duration-300"
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="px-6 py-3">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                       <div>
                         <h4 className="text-xl font-semibold text-foreground mb-1">
@@ -154,7 +140,7 @@ const Experience = () => {
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         {exp.achievements.map((achievement, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <span className="text-primary mt-1">•</span>
+                            <span className="text-primary ">•</span>
                             {achievement}
                           </li>
                         ))}
@@ -181,20 +167,24 @@ const Experience = () => {
 
           {/* Education & Certifications */}
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-8">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">
               Education
             </h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <Card key={index}>
-                  <CardContent className="p-6">
-                    <h4 className="font-semibold text-foreground mb-2">
+                <Card key={index} className="py-1 border-0 shadow-none my-0.5">
+                  <CardContent className="px-6 py-2 ">
+                    <h4 className="font-semibold text-foreground text-lg mb-1">
                       {edu.degree}
                     </h4>
-                    <p className="text-primary font-medium mb-2">
+                    <a
+                      href={edu.link}
+                      target="_blank"
+                      className="text-primary font-medium mb-2 hover:underline hover:decoration-wavy"
+                    >
                       {edu.school}
-                    </p>
-                    <div className="flex flex-col gap-1 text-sm text-muted-foreground mb-3">
+                    </a>
+                    <div className="flex  gap-y-1 gap-x-5 text-sm text-muted-foreground mb-3">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
                         {edu.period}
@@ -204,34 +194,49 @@ const Experience = () => {
                         {edu.location}
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    {/* <p className="text-sm text-muted-foreground">
                       {edu.description}
-                    </p>
+                    </p> */}
                   </CardContent>
                 </Card>
               ))}
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-semibold text-foreground mb-4">
+              <h3 className="text-xl font-semibold text-foreground mb-2">
                 Certifications
               </h3>
-              <div className="space-y-3">
-                {[
-                  "AWS Certified Developer",
-                  "Google Cloud Professional",
-                  "MongoDB Certified Developer",
-                  "Agile/Scrum Master Certified",
-                ].map((cert) => (
+              <div className="space-y-2">
+                {certifications.map((cert, index) => (
                   <div
-                    key={cert}
-                    className="flex items-center gap-2 p-3 bg-secondary/10 rounded-lg"
+                    key={index}
+                    className="flex items-center gap-1 p-1 bg-secondary/10 rounded-lg"
                   >
-                    <div className="w-2 h-2 bg-primary rounded-full" />
-                    <span className="text-sm font-medium">{cert}</span>
+                    <div className="w-1 h-1 bg-primary rounded-full" />
+                    <div className="flex gap-x-1 ">
+                      <span className="text-sm font-medium ">{cert.title}</span>{" "}
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:text-blue-700"
+                      >
+                        <Link size={15} />
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
+              <p className="text-sm text-muted-foreground mt-2">
+                See{" "}
+                <a
+                  href="https://www.linkedin.com/in/loko-ismael/details/certifications/"
+                  target="_blank"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  all certifications
+                </a>
+              </p>
             </div>
           </div>
         </div>
