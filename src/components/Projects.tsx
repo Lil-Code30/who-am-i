@@ -9,8 +9,7 @@ const Projects = () => {
       title: "Drip On Drip - E-Commerce Website",
       description:
         "A React-based full-stack e-commerce platform for trendy clothing with product browsing, cart management, user authentication, and checkout features.",
-      image:
-        "https://images.pexels.com/photos/3184305/pexels-photo-3184305.jpeg",
+      image: "/images/ecom.png",
       technologies: [
         "React",
         "Node.js",
@@ -31,8 +30,7 @@ const Projects = () => {
       title: "Dev Quotes ",
       description:
         "A fullstack quotes application showcasing random developer quotes, with user authentication and the ability to save favorites and can also like quotes.",
-      image:
-        "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg", // Placeholder, replace with your screenshot
+      image: "/images/dev-quotes.png",
       technologies: [
         "React",
         "Node.js",
@@ -50,7 +48,7 @@ const Projects = () => {
       title: "To-Do App",
       description:
         "A simple and intuitive to-do list app built with React, allowing users to add, edit, delete, and mark tasks as completed.",
-      image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg", // Placeholder image
+      image: "/images/todo-app.png",
       technologies: ["React", "JavaScript", "Tailwind CSS", "DaisyUI"],
       liveUrl: "https://to-do-app-v2-ten.vercel.app/",
       githubUrl: "https://github.com/Lil-Code30/to-do-App",
@@ -60,7 +58,7 @@ const Projects = () => {
       title: "Cine Verse",
       description:
         "A movie browsing platform that displays popular and trending movies using an external API with search and filter functionalities.",
-      image: "https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg", // Placeholder
+      image: "/images/cine-verse.png",
       technologies: ["React", "Tailwind CSS", "TMDB API", "LocalStorage"],
       liveUrl: "https://cine-verse-seven.vercel.app/",
       githubUrl: "https://github.com/Lil-Code30/cine-verse",
@@ -92,7 +90,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-62 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-62 object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   <Button size="sm" variant="secondary">
