@@ -115,6 +115,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground min-h-screen font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-3 md:px-6;
+    @apply bg-background text-foreground min-h-screen font-sans antialiased max-w-4xl mx-auto py-12 sm:py-24 px-3 md:px-6;
   }
 }
